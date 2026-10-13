@@ -1,4 +1,11 @@
+game.showLongText("Welcome back folks! Today we have the...", DialogLayout.Center)
+game.showLongText("Chicago Bears v.s Green Bay Packers!", DialogLayout.Center)
+game.showLongText("Let's get this game started after a quick tip on the next page", DialogLayout.Center)
+game.showLongText("Click \"edit\" on the bottom of the game to change difficulty, teams, and jerseys!", DialogLayout.Center)
+game.showLongText("This is NFL arcade brought to you by Gabe Joseph", DialogLayout.Center)
+// You will need to change the dialogue above depending on what teams you choose
 football.createGame(league.chicagoBears, league.greenBayPackers, 60)
-football.setTeamAlternateColors(TeamId.Player, true)
-football.setTeamAlternateColors(TeamId.Computer, true)
+football.setTeamAlternateColors(TeamId.Player, false)
+football.setTeamAlternateColors(TeamId.Computer, false)
 football.setHardMode(true)
+scene.cameraShake(5, 500)
